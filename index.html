@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Britech Janitorial Services | Commercial Cleaning in Calgary</title>
+<meta name="description" content="Award winning commercial cleaning in Calgary. Over 30 years of janitorial experience for offices, condos, restaurants and commercial spaces. Call 403-277-0011 for a free quote.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FFC400'/%3E%3Ctext x='16' y='24' font-size='24' font-weight='900' text-anchor='middle' font-family='Arial' fill='%230D1B2A'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0D1B2A; --ink-2:#142a40; --paper:#F4F1EA; --paper-2:#EAE5DA; --yellow:#FFC400; --red:#D3362B; --white:#fff;
+  --line:rgba(13,27,42,.16); --line-d:rgba(255,255,255,.18);
+  --sans:'Archivo','Arial Narrow',system-ui,sans-serif; --serif:'Instrument Serif',Georgia,serif;
+  --pad:clamp(20px,4vw,56px); --max:1320px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--yellow);box-shadow:0 0 0 1px var(--ink)}
+.dark .eyebrow::before,.on-dark .eyebrow::before{box-shadow:none}
+h1,h2,h3{font-weight:800;letter-spacing:-.025em;line-height:.98}
+em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 24px;font-weight:700;font-size:.95rem;letter-spacing:.02em;border:2px solid var(--ink);transition:transform .2s,background .2s,color .2s;cursor:pointer;font-family:inherit;background:none;color:inherit}
+.btn .ar{transition:transform .2s}
+.btn:hover .ar{transform:translateX(5px)}
+.btn-y{color:var(--ink);background:var(--yellow);border-color:var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.btn-y:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.btn-o:hover{background:var(--ink);color:var(--paper)}
+.skip{position:absolute;left:-999px;top:0;background:var(--yellow);padding:10px 16px;z-index:200;font-weight:700}
+.skip:focus{left:10px;top:10px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+/* top bar + header */
+.topbar{background:var(--ink);color:#cfd8e3;font-size:.82rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:9px;padding-bottom:9px}
+.topbar a:hover{color:var(--yellow)}
+.topbar b{color:var(--yellow);font-weight:700}
+header.site{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:2px solid var(--ink)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{width:46px;height:46px;background:var(--yellow);border:2px solid var(--ink);display:grid;place-items:center;font-weight:900;font-size:1.7rem;letter-spacing:-.04em;box-shadow:3px 3px 0 var(--ink)}
+.logo .word{display:flex;flex-direction:column;line-height:1}
+.logo .word b{font-weight:900;font-size:1.45rem;letter-spacing:.04em}
+.logo .word small{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;margin-top:5px}
+nav.main ul{display:flex;gap:34px}
+nav.main a{font-weight:600;font-size:.95rem;position:relative;padding:6px 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--yellow);box-shadow:0 1px 0 var(--ink);transition:width .25s}
+nav.main a:hover::after,nav.main a.on::after{width:100%}
+.head-cta{padding:12px 20px;font-size:.88rem}
+.burger{display:none;width:46px;height:46px;border:2px solid var(--ink);background:var(--yellow);cursor:pointer;position:relative}
+.burger span,.burger span::before,.burger span::after{position:absolute;left:11px;width:20px;height:2px;background:var(--ink);content:"";transition:.2s}
+.burger span{top:20px}.burger span::before{top:-7px;left:0}.burger span::after{top:7px;left:0}
+.burger[aria-expanded=true] span{background:transparent}
+.burger[aria-expanded=true] span::before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded=true] span::after{top:0;transform:rotate(-45deg)}
+
+/* hero */
+.hero{padding:clamp(36px,6vw,80px) 0 0;position:relative}
+.hero h1{font-size:clamp(2.9rem,8.4vw,8rem);max-width:15ch;font-stretch:92%}
+.hero h1 em{font-size:1.06em;color:var(--red)}
+.hero-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(28px,5vw,72px);margin-top:clamp(28px,4vw,52px);align-items:end}
+.hero-copy p{font-size:1.15rem;max-width:44ch;margin-bottom:28px}
+.hero-copy .tagline{font-weight:800;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;display:block}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.hero-pic{position:relative}
+.hero-pic::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--yellow);border:2px solid var(--ink)}
+.hero-pic .frame{position:relative;aspect-ratio:3/2;border:2px solid var(--ink);clip-path:polygon(0 0,calc(100% - 64px) 0,100% 64px,100% 100%,0 100%);background:var(--ink)}
+.hero-pic img{width:100%;height:100%;object-fit:cover}
+.award{position:absolute;left:-26px;bottom:-34px;background:var(--white);border:2px solid var(--ink);padding:12px 20px 12px 12px;display:flex;align-items:center;gap:14px;box-shadow:5px 5px 0 var(--ink);z-index:2}
+.award img{width:68px;height:68px;object-fit:contain}
+.award b{display:block;font-size:.95rem;line-height:1.15}
+.award span{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:#5b6a7a}
+
+/* caution tape */
+.tape{margin-top:clamp(70px,8vw,110px);background:var(--yellow);border-block:2px solid var(--ink);position:relative;overflow:hidden}
+.tape::before,.tape::after{content:"";display:block;height:12px;background:repeating-linear-gradient(-45deg,var(--ink) 0 14px,var(--yellow) 14px 28px)}
+.tape-run{display:flex;width:max-content;animation:run 38s linear infinite;padding:16px 0}
+.tape-run span{font-weight:800;font-size:clamp(1.1rem,2.2vw,1.7rem);text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;padding-right:36px;display:flex;align-items:center;gap:36px}
+.tape-run span i{font-style:normal;width:12px;height:12px;background:var(--ink);transform:rotate(45deg);display:inline-block}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* about */
+.about{padding:clamp(64px,9vw,130px) 0}
+.about-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px)}
+.big30{font-size:clamp(9rem,22vw,20rem);font-weight:900;line-height:.8;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:3px var(--ink);display:block;margin-left:-.04em}
+.big30 sup{font-size:.45em;vertical-align:top;position:relative;top:.12em;-webkit-text-stroke:3px var(--ink)}
+.about-left .cap{font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.85rem;margin:20px 0 28px;max-width:22ch;line-height:1.4}
+.about-left .pic{position:relative;margin-top:10px}
+.about-left .pic img{aspect-ratio:4/3;width:100%;object-fit:cover;border:2px solid var(--ink);clip-path:polygon(0 0,100% 0,100% calc(100% - 52px),calc(100% - 52px) 100%,0 100%)}
+.about-left .pic::after{content:"";position:absolute;left:-14px;top:14px;bottom:-14px;width:14px;background:var(--yellow);border:2px solid var(--ink);border-right:0}
+.about-right h2{font-size:clamp(2.1rem,4.6vw,4rem);margin:18px 0 26px}
+.about-right .lead{font-size:1.18rem;max-width:56ch;margin-bottom:14px}
+.about-right .lead.s{color:#3b4a5a;font-size:1.05rem}
+.pillars{margin-top:44px;border-top:2px solid var(--ink)}
+.pillar{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:26px 0;border-bottom:1px solid var(--line)}
+.pillar .n{font-weight:900;font-size:2.4rem;line-height:1;color:var(--yellow);-webkit-text-stroke:1.5px var(--ink)}
+.pillar h3{font-size:1.4rem;margin-bottom:6px;letter-spacing:-.015em}
+.pillar p{color:#3b4a5a;max-width:52ch}
+
+/* services directory */
+.services{background:var(--paper-2);border-block:2px solid var(--ink);padding:clamp(60px,8vw,110px) 0}
+.srv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,56px)}
+.srv-head h2{font-size:clamp(2.4rem,6vw,5.2rem);max-width:12ch}
+.srv-head p{max-width:34ch;font-weight:500}
+.dir{display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,64px);align-items:start}
+.dir-panel{position:sticky;top:104px;aspect-ratio:4/5;border:2px solid var(--ink);background:var(--ink);overflow:hidden;box-shadow:10px 10px 0 var(--yellow),10px 10px 0 2px var(--ink)}
+.dir-panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .5s,transform 1.2s}
+.dir-panel img.on{opacity:1;transform:scale(1)}
+.dir-panel .tag{position:absolute;left:0;bottom:0;background:var(--yellow);border-top:2px solid var(--ink);border-right:2px solid var(--ink);padding:12px 20px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem;z-index:2}
+.dir-list{border-top:2px solid var(--ink)}
+.dir-row{border-bottom:1px solid var(--ink);position:relative}
+.dir-row a{display:grid;grid-template-columns:64px 1fr 44px;gap:14px;align-items:center;padding:26px 14px 26px 6px;position:relative;z-index:1;transition:padding .25s}
+.dir-row::before{content:"";position:absolute;inset:0;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.dir-row.on::before{transform:scaleX(1)}
+.dir-row.on a{padding-left:18px}
+.dir-row .num{font-weight:800;font-size:.95rem;letter-spacing:.1em}
+.dir-row h3{font-size:clamp(1.4rem,2.6vw,2.2rem);letter-spacing:-.02em}
+.dir-row p{font-size:.98rem;color:#3b4a5a;margin-top:6px;max-width:46ch}
+.dir-row.on p{color:var(--ink)}
+.dir-row .go{width:44px;height:44px;border:2px solid var(--ink);display:grid;place-items:center;font-weight:700;background:var(--paper);transition:transform .25s}
+.dir-row.on .go{transform:rotate(-45deg);background:var(--ink);color:var(--yellow)}
+.dir-row .thumb{display:none}
+
+/* calgary band */
+.band{position:relative;min-height:clamp(360px,52vw,620px);display:grid;align-items:end;color:var(--white);overflow:hidden;background:var(--ink)}
+.band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,27,42,.05) 25%,rgba(13,27,42,.82))}
+.band .wrap{position:relative;z-index:2;padding-bottom:clamp(30px,5vw,64px);width:100%}
+.band h2{font-size:clamp(2.4rem,7.4vw,7rem);max-width:13ch}
+.band h2 em{color:var(--yellow)}
+.band .eyebrow::before{box-shadow:none}
+
+/* why */
+.why{background:var(--ink);color:var(--paper);padding:clamp(64px,9vw,130px) 0;position:relative}
+.why-grid{display:grid;grid-template-columns:6fr 6fr;gap:clamp(30px,6vw,96px);align-items:start}
+.why h2{font-size:clamp(2.2rem,5vw,4.4rem);margin:18px 0 26px}
+.why h2 em{color:var(--yellow)}
+.why .lead{font-size:1.15rem;color:#cfd8e3;max-width:50ch;margin-bottom:16px}
+.serve{margin-top:38px;border-top:1px solid var(--line-d)}
+.serve li{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line-d);font-weight:800;font-size:clamp(1.5rem,3vw,2.4rem);letter-spacing:-.02em;transition:padding .25s,color .25s}
+.serve li:hover{padding-left:14px;color:var(--yellow)}
+.serve li small{font-size:.72rem;letter-spacing:.16em;color:#8fa1b4;font-weight:600;text-transform:uppercase}
+.sheet{background:var(--paper);color:var(--ink);border:2px solid var(--yellow);padding:clamp(24px,3vw,40px);position:relative;box-shadow:10px 10px 0 var(--yellow)}
+.sheet::before{content:"";position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:110px;height:30px;background:var(--ink);border:2px solid var(--yellow)}
+.sheet h3{font-size:1.5rem;margin-bottom:6px}
+.sheet .sub{color:#3b4a5a;margin-bottom:22px;font-size:.98rem}
+.freq{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.freq span{border:2px solid var(--ink);padding:7px 16px;font-weight:700;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase}
+.freq span:first-child{background:var(--yellow)}
+.check li{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px dashed rgba(13,27,42,.35);font-weight:500}
+.check li::before{content:"";flex:none;width:22px;height:22px;border:2px solid var(--ink);margin-top:2px;background:var(--yellow) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230D1B2A' stroke-width='3.5' stroke-linecap='square'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7'/%3E%3C/svg%3E") center/16px no-repeat}
+.sheet .foot{margin-top:18px;padding-top:18px;border-top:2px solid var(--ink);font-weight:600}
+.why-pic{margin-top:clamp(36px,5vw,64px);display:grid;grid-template-columns:7fr 5fr;gap:clamp(16px,2vw,28px)}
+.why-pic img{width:100%;height:100%;min-height:260px;object-fit:cover;object-position:60% 50%;border:2px solid var(--paper)}
+.why-pic .q{border:2px solid var(--yellow);padding:clamp(22px,3vw,40px);display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.why-pic .q p{font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2.3rem);line-height:1.12}
+.why-pic .q span{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--yellow);font-weight:700}
+
+/* contact */
+.contact{background:var(--yellow);border-top:2px solid var(--ink);padding:clamp(64px,9vw,120px) 0;position:relative}
+.contact-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,90px);align-items:start}
+.contact h2{font-size:clamp(2.6rem,6vw,5.6rem);margin:16px 0 22px}
+.contact h2 em{color:var(--red);-webkit-text-stroke:0}
+.contact .lead{font-size:1.15rem;max-width:36ch;font-weight:500;margin-bottom:34px}
+.cinfo{border-top:2px solid var(--ink)}
+.cinfo div{padding:18px 0;border-bottom:1px solid rgba(13,27,42,.4)}
+.cinfo small{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:4px}
+.cinfo a.phone{font-weight:900;font-size:clamp(1.9rem,3.4vw,2.8rem);letter-spacing:-.02em;line-height:1}
+.cinfo a.phone:hover{text-decoration:underline;text-decoration-thickness:3px}
+.cinfo address{font-style:normal;font-weight:600;font-size:1.1rem}
+.cinfo a.dir-link{font-weight:700;border-bottom:2px solid var(--ink);margin-left:8px;font-size:.9rem}
+form.quote{background:var(--paper);border:2px solid var(--ink);padding:clamp(24px,3.4vw,46px);box-shadow:10px 10px 0 var(--ink)}
+form.quote h3{font-size:1.7rem;margin-bottom:6px}
+form.quote .sub{margin-bottom:24px;color:#3b4a5a}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fld{margin-bottom:16px}
+.fld label{display:block;font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.fld input,.fld textarea{width:100%;font:inherit;padding:14px 14px;border:2px solid var(--ink);background:var(--white);color:var(--ink);border-radius:0}
+.fld input:focus,.fld textarea:focus{outline:3px solid var(--yellow);outline-offset:0;box-shadow:0 0 0 5px var(--ink)}
+.fld textarea{min-height:130px;resize:vertical}
+form.quote .btn{width:100%;justify-content:space-between;font-size:1.05rem;padding:18px 24px}
+.ok{display:none;margin-top:16px;padding:14px 16px;background:var(--ink);color:var(--yellow);font-weight:600}
+.ok.show{display:block}
+
+/* footer */
+footer.site{background:var(--ink);color:#cfd8e3;padding:clamp(54px,7vw,90px) 0 0;border-top:2px solid var(--ink)}
+.foot-top{display:grid;grid-template-columns:5fr 2fr 3fr 3fr;gap:clamp(24px,4vw,56px);padding-bottom:clamp(36px,5vw,64px)}
+footer .logo .word b{color:var(--paper)}
+footer .logo .word small{color:#cfd8e3}
+footer .logo .mark{color:var(--ink);border-color:var(--yellow);box-shadow:3px 3px 0 var(--yellow)}
+footer p.fabout{margin:22px 0 24px;max-width:36ch;font-size:.98rem}
+footer h4{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow);margin-bottom:18px;font-weight:700}
+footer li{margin-bottom:10px;font-size:.98rem}
+footer li a:hover,footer .cl a:hover{color:var(--yellow)}
+footer .cl{font-size:.98rem;line-height:1.6}
+footer .cl a.ph{display:block;font-weight:800;font-size:1.5rem;color:var(--paper);margin-bottom:10px}
+.foot-bot{border-top:1px solid var(--line-d);padding:22px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.88rem}
+.foot-bot a{color:var(--yellow);font-weight:600;border-bottom:1px solid currentColor}
+.foot-bot a:hover{color:var(--paper)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:2px solid var(--ink);display:none}
+  nav.main.open{display:block}
+  nav.main ul{flex-direction:column;gap:0;padding:8px var(--pad) 20px}
+  nav.main a{display:block;padding:16px 0;border-bottom:1px solid var(--line);font-size:1.1rem}
+  .burger{display:block}
+  .head-cta{display:none}
+  .hero-grid,.about-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-pic{margin-right:18px;margin-bottom:34px}
+  .dir{grid-template-columns:1fr}
+  .dir-panel{display:none}
+  .dir-row .thumb{display:block;grid-column:1/-1;margin-top:14px;aspect-ratio:16/9;object-fit:cover;width:100%;border:2px solid var(--ink)}
+  .dir-row a{grid-template-columns:44px 1fr 40px;align-items:start}
+  .dir-row .go{width:40px;height:40px}
+  .dir-row.on::before{display:none}
+  .dir-row.on a{padding-left:6px}
+  .dir-row.on .go{transform:none}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .foot-top>div:first-child{grid-column:1/-1}
+  .why-pic{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .topbar .wrap{justify-content:center}
+  .topbar .addr{display:none}
+  .f2{grid-template-columns:1fr;gap:0}
+  .foot-top{grid-template-columns:1fr}
+  .award{left:-8px;padding:10px 14px 10px 10px}
+  .award img{width:54px;height:54px}
+  .pillar{grid-template-columns:48px 1fr}
+  .big30{-webkit-text-stroke-width:2px}
+  .hero-btns .btn{width:100%;justify-content:space-between}
+  .logo .word b{font-size:1.2rem}
+  .logo .mark{width:40px;height:40px;font-size:1.45rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .tape-run{animation:none}
+  .js .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="addr">314-918 16 Ave NW, Calgary, AB T2M 0K3</span>
+    <span>Free quotes: <a href="tel:+14032770011"><b>403-277-0011</b></a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="Britech Janitorial Services, home">
+      <span class="mark">B</span>
+      <span class="word"><b>BRITECH</b><small>Janitorial Services</small></span>
+    </a>
+    <nav class="main" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home" class="on">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services we Provide</a></li>
+        <li><a href="#why">Why Britech</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-y head-cta" href="#contact">Get a free quote <span class="ar">&rarr;</span></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <span class="eyebrow">Servicing Calgary and area</span>
+    <h1 style="margin-top:20px">Award winning commercial cleaning in <em>Calgary.</em></h1>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="tagline">Any size, any space.</span>
+        <p>Over 30 years of janitorial experience for Calgary businesses, with cost effective methods and employees who are well trained and really care about the job they do.</p>
+        <div class="hero-btns">
+          <a class="btn btn-y" href="#contact">Get a free quote <span class="ar">&rarr;</span></a>
+          <a class="btn btn-o" href="tel:+14032770011">Call 403-277-0011</a>
+        </div>
+      </div>
+      <div class="hero-pic">
+        <div class="frame"><img src="images/calgary-skyline.jpg" alt="Calgary skyline at sunset" fetchpriority="high"></div>
+        <div class="award">
+          <img src="images/consumer-choice-award.png" alt="Consumer Choice Award, Business Excellence">
+          <div><b>Consumer Choice Award</b><span>Business Excellence</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tape" aria-hidden="true">
+    <div class="tape-run">
+      <span>Condominium Cleaning <i></i> Post Construction Cleaning <i></i> Electrostatic Disinfection <i></i> Green Cleaning <i></i> Stripping and Waxing <i></i> Office Cleaning <i></i> Commercial Cleaning <i></i> Carpet Cleaning <i></i></span>
+      <span>Condominium Cleaning <i></i> Post Construction Cleaning <i></i> Electrostatic Disinfection <i></i> Green Cleaning <i></i> Stripping and Waxing <i></i> Office Cleaning <i></i> Commercial Cleaning <i></i> Carpet Cleaning <i></i></span>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-left rv">
+      <span class="big30">30<sup>+</sup></span>
+      <p class="cap">Years of janitorial experience in Calgary</p>
+      <div class="pic"><img src="images/condo-lobby.jpg" alt="Clean condominium elevator lobby with cleaning cart" loading="lazy"></div>
+    </div>
+    <div class="about-right rv">
+      <span class="eyebrow">About Us</span>
+      <h2>Thorough cleaning, so every space looks fresh <em>every day.</em></h2>
+      <p class="lead">Britech focuses on janitorial cleaning and has over 30 years of experience as a commercial cleaning company in Calgary. Whether it is a commercial building or a busy office, we clean thoroughly so your space looks fresh daily.</p>
+      <p class="lead s">We offer unparalleled quality through employees that are well trained and really care about the job they do.</p>
+      <div class="pillars">
+        <div class="pillar"><span class="n">1</span><div><h3>A Quality Cleaning Service</h3><p>Services designed around your needs and delivered by professional staff who are punctual and thorough.</p></div></div>
+        <div class="pillar"><span class="n">2</span><div><h3>No Corner Is Left Untouched</h3><p>Our crews arrive equipped to start right away and pay close attention to detail.</p></div></div>
+        <div class="pillar"><span class="n">3</span><div><h3>Convenient and Easy to Reach</h3><p>Easy to contact, punctual and consistent, with affordable services so you can focus on other priorities.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="srv-head rv">
+      <div><span class="eyebrow">Services we Provide</span><h2 style="margin-top:18px">Any size, <em>any space.</em></h2></div>
+      <p>Eight services, one team. Tell us what your building needs and we will build the schedule around it.</p>
+    </div>
+    <div class="dir">
+      <div class="dir-panel" aria-hidden="true">
+        <img class="on" src="images/condo-lobby.jpg" alt="">
+        <img src="images/post-construction.jpg" alt="">
+        <img src="images/electrostatic-disinfection.jpg" alt="">
+        <img src="images/green-cleaning.jpg" alt="">
+        <img src="images/floor-stripping-waxing.jpg" alt="">
+        <img src="images/office-cleaning.jpg" alt="">
+        <img src="images/commercial-tower.jpg" alt="">
+        <img src="images/carpet-cleaning.jpg" alt="">
+        <span class="tag" id="dirtag">01 / Condominium Cleaning</span>
+      </div>
+      <ul class="dir-list" id="dirlist">
+        <li class="dir-row on" data-i="0"><a href="#contact"><span class="num">01</span><span><h3>Condominium Cleaning</h3><p>Common area cleaning of condos, keeping lobbies and whole buildings clean and welcoming.</p></span><span class="go">&rarr;</span><img class="thumb" src="images/condo-lobby.jpg" alt="Condominium lobby cleaning" loading="lazy"></a></li>
+        <li class="dir-row" data-i="1"><a href="#contact"><span class="num">02</span><span><h3>Post Construction Cleaning</h3><p>Cleaning up after your improvements.</p></span><span class="go">&rarr;</span><img class="thumb" src="images/post-construction.jpg" alt="Post construction debris" loading="lazy"></a></li>
+        <li class="dir-row" data-i="2"><a href="#contact"><span class="num">03</span><span><h3>Electrostatic Disinfection</h3><p>Electrostatic spraying that coats every surface, from desks to doorknobs.</p></span><span class="go">&rarr;</span><img class="thumb" src="images/electrostatic-disinfection.jpg" alt="Electrostatic disinfection spraying" loading="lazy"></a></li>
+        <li class="dir-row" data-i="3"><a href="#contact"><span class="num">04</span><span><h3>Green Cleaning</h3><p>Green cleaning for your building.</p></span><span class="go">&rarr;</span><img class="thumb" src="images/green-cleaning.jpg" alt="Cleaning supplies" loading="lazy"></a></li>
+        <li class="dir-row" data-i="4"><a href="#contact"><span class="num">05</span><span><h3>Stripping and Waxing</h3><p>Make your floors look new.</p></span><span class="go">&rarr;</span><img class="thumb" src="images/floor-stripping-waxing.jpg" alt="Floor stripping and waxing" loading="lazy"></a></li>
+        <li class="dir-row" data-i="5"><a href="#contact"><span class="num">06</span><span><h3>Office Cleaning</h3><p>Vacuuming, dusting, bathrooms and kitchens, daily, weekly or monthly.</p></span><span class="go">&rarr;</span><img class="thumb" src="images/office-cleaning.jpg" alt="Office cleaning equipment" loading="lazy"></a></li>
+        <li class="dir-row" data-i="6"><a href="#contact"><span class="num">07</span><span><h3>Commercial Cleaning</h3><p>Offices, condos, restaurants and other commercial spaces.</p></span><span class="go">&rarr;</span><img class="thumb" src="images/commercial-tower.jpg" alt="Commercial office tower" loading="lazy"></a></li>
+        <li class="dir-row" data-i="7"><a href="#contact"><span class="num">08</span><span><h3>Carpet Cleaning</h3><p>Commercial carpet shampooing.</p></span><span class="go">&rarr;</span><img class="thumb" src="images/carpet-cleaning.jpg" alt="Commercial carpet cleaning" loading="lazy"></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="Servicing Calgary and area">
+  <img src="images/peace-bridge.jpg" alt="Peace Bridge, Calgary" loading="lazy">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--paper)">Home base</span>
+    <h2 style="margin-top:14px">Servicing <em>Calgary</em> and area.</h2>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="rv">
+        <span class="eyebrow" style="color:var(--paper)">Why Britech</span>
+        <h2>Family owned and operated. <em>Tailored</em> to every client.</h2>
+        <p class="lead">Professional office cleaning in Calgary for over 30 years. We tailor our products, techniques and schedules to each client, with access to current cleaning products, equipment and materials.</p>
+        <p class="lead">We discuss your priorities and needs, then build a customized cleaning schedule at a price that fits your budget.</p>
+        <ul class="serve" aria-label="Who we serve">
+          <li>Offices <small>Daily, weekly or monthly</small></li>
+          <li>Condos <small>Lobbies and common areas</small></li>
+          <li>Restaurants <small>Kitchens and floors</small></li>
+          <li>Commercial spaces <small>Any size</small></li>
+        </ul>
+      </div>
+      <div class="sheet rv">
+        <h3>What a Britech visit covers</h3>
+        <p class="sub">Scheduled to suit you.</p>
+        <div class="freq"><span>Daily</span><span>Weekly</span><span>Monthly</span></div>
+        <ul class="check">
+          <li>Vacuuming floors</li>
+          <li>Cleaning walls, bathrooms and kitchens</li>
+          <li>Stain removal, scrubbing and dusting all surfaces</li>
+          <li>Polishing tiles, stainless steel and floors</li>
+          <li>Waxing and buffing floors</li>
+          <li>Window cleaning</li>
+        </ul>
+        <p class="foot">Clean workplaces support productivity, health, safety and wellbeing.</p>
+      </div>
+    </div>
+    <div class="why-pic rv">
+      <img src="images/wet-floor-sign.jpg" alt="Wet floor signs in a freshly cleaned commercial lobby">
+      <div class="q"><span>Award winning services</span><p>Winner of the Consumer Choice Award in the Calgary area.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <span class="eyebrow">Contact Us</span>
+      <h2>Drop us <em>a line.</em></h2>
+      <p class="lead">Feel free to contact us today for a free quote.</p>
+      <div class="cinfo">
+        <div><small>Phone</small><a class="phone" href="tel:+14032770011">403-277-0011</a></div>
+        <div><small>Address</small><address>314-918 16 Ave NW<br>Calgary, AB T2M 0K3 <a class="dir-link" href="https://www.google.com/maps/search/?api=1&query=314-918+16+Ave+NW+Calgary+AB+T2M+0K3" target="_blank" rel="noopener">Directions</a></address></div>
+      </div>
+    </div>
+    <form class="quote rv" id="quote" novalidate>
+      <h3>Free quotes</h3>
+      <p class="sub">Tell us a little about your space and we will get back to you.</p>
+      <div class="f2">
+        <div class="fld"><label for="n">Name</label><input id="n" name="name" type="text" autocomplete="name" required></div>
+        <div class="fld"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="fld"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+      <div class="fld"><label for="m">How can we help?</label><textarea id="m" name="message"></textarea></div>
+      <button class="btn btn-y" type="submit">Send <span class="ar">&rarr;</span></button>
+      <p class="ok" id="ok" role="status">Thank you. We will be in touch shortly.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="logo" href="#home" aria-label="Britech Janitorial Services, home">
+          <span class="mark">B</span>
+          <span class="word"><b>BRITECH</b><small>Janitorial Services</small></span>
+        </a>
+        <p class="fabout">Commercial cleaning in Calgary for over 30 years. Family owned and operated.</p>
+        <a class="btn btn-y" href="#contact">Get a free quote <span class="ar">&rarr;</span></a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Britech</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Condominium Cleaning</a></li>
+          <li><a href="#services">Post Construction Cleaning</a></li>
+          <li><a href="#services">Electrostatic Disinfection</a></li>
+          <li><a href="#services">Green Cleaning</a></li>
+          <li><a href="#services">Stripping and Waxing</a></li>
+          <li><a href="#services">Office Cleaning</a></li>
+          <li><a href="#services">Commercial Cleaning</a></li>
+          <li><a href="#services">Carpet Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="cl">
+        <h4>Contact</h4>
+        <a class="ph" href="tel:+14032770011">403-277-0011</a>
+        314-918 16 Ave NW<br>Calgary, AB T2M 0K3
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>&copy; 2026 Britech Janitorial Services. All rights reserved.</span>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+// mobile nav
+var burger=document.getElementById('burger'),nav=document.getElementById('nav');
+burger.addEventListener('click',function(){var o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');burger.setAttribute('aria-expanded','false')}});
+// services directory
+(function(){
+  var rows=[].slice.call(document.querySelectorAll('.dir-row')),
+      imgs=[].slice.call(document.querySelectorAll('.dir-panel img')),
+      tag=document.getElementById('dirtag');
+  function set(i){
+    rows.forEach(function(r,k){r.classList.toggle('on',k===i)});
+    imgs.forEach(function(m,k){m.classList.toggle('on',k===i)});
+    var t=rows[i].querySelector('h3').textContent;
+    tag.textContent=('0'+(i+1)).slice(-2)+' / '+t;
+  }
+  rows.forEach(function(r,i){
+    r.addEventListener('mouseenter',function(){set(i)});
+    r.querySelector('a').addEventListener('focus',function(){set(i)});
+  });
+})();
+// scroll reveal
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+// active nav link
+(function(){
+  var links=[].slice.call(document.querySelectorAll('nav.main a')),
+      secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY+140,cur=0;
+    secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});
+    links.forEach(function(a,i){a.classList.toggle('on',i===cur)});
+  },{passive:true});
+})();
+// quote form. Set FORM_ENDPOINT to the live form handler (e.g. WPForms, Formspree) when the site goes live.
+(function(){
+  var FORM_ENDPOINT='';
+  var f=document.getElementById('quote'),ok=document.getElementById('ok');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!f.name.value.trim()||!/^\S+@\S+\.\S+$/.test(f.email.value)){
+      (f.name.value.trim()?f.email:f.name).focus();return;
+    }
+    if(FORM_ENDPOINT){
+      fetch(FORM_ENDPOINT,{method:'POST',body:new FormData(f)}).then(function(){ok.classList.add('show');f.reset()});
+    }else{ok.classList.add('show');f.reset()}
+  });
+})();
+</script>
+</body>
+</html>
