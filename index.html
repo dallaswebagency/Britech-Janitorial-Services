@@ -61,24 +61,37 @@ nav.main a:hover::after,nav.main a.on::after{width:100%}
 .burger[aria-expanded=true] span::after{top:0;transform:rotate(-45deg)}
 
 /* hero */
-.hero{padding:clamp(36px,6vw,80px) 0 0;position:relative}
-.hero h1{font-size:clamp(2.9rem,8.4vw,8rem);max-width:15ch;font-stretch:92%}
-.hero h1 em{font-size:1.06em;color:var(--red)}
-.hero-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(28px,5vw,72px);margin-top:clamp(28px,4vw,52px);align-items:end}
-.hero-copy p{font-size:1.15rem;max-width:44ch;margin-bottom:28px}
-.hero-copy .tagline{font-weight:800;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;display:block}
+.hero{position:relative;background:var(--ink);overflow:hidden;min-height:min(800px,92vh);display:flex;align-items:center;padding:clamp(56px,8vw,110px) 0 clamp(120px,12vw,170px)}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:70% 78%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,24,43,.45),transparent 40%)}
+.hero-yel,.hero-navy{position:absolute;top:0;bottom:0;left:0;clip-path:polygon(0 0,100% 0,80% 100%,0 100%)}
+.hero-navy{width:66%;background:linear-gradient(100deg,#07182B 55%,#0c2640)}
+.hero-yel{width:calc(66% + 26px);background:var(--yellow)}
+.hero-in{position:relative;z-index:2;width:100%}
+.hero-copy{max-width:min(660px,54%);color:var(--paper)}
+.hero .eyebrow{color:var(--yellow)}
+.hero .eyebrow::before{box-shadow:none}
+.hero h1{font-size:clamp(2.7rem,5.6vw,5.5rem);margin:22px 0 26px;color:#fff;letter-spacing:-.03em}
+.hero h1 em{color:var(--yellow);font-size:1.08em}
+.hero-copy p{font-size:1.15rem;max-width:46ch;margin-bottom:32px;color:#d5deea}
 .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
-.hero-pic{position:relative}
-.hero-pic::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--yellow);border:2px solid var(--ink)}
-.hero-pic .frame{position:relative;aspect-ratio:3/2;border:2px solid var(--ink);clip-path:polygon(0 0,calc(100% - 64px) 0,100% 64px,100% 100%,0 100%);background:var(--ink)}
-.hero-pic img{width:100%;height:100%;object-fit:cover}
-.award{position:absolute;left:-26px;bottom:-34px;background:var(--white);border:2px solid var(--ink);padding:12px 20px 12px 12px;display:flex;align-items:center;gap:14px;box-shadow:5px 5px 0 var(--ink);z-index:2}
-.award img{width:68px;height:68px;object-fit:contain}
-.award b{display:block;font-size:.95rem;line-height:1.15}
-.award span{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:#5b6a7a}
+.hero .btn-o{border-color:var(--paper);color:var(--paper)}
+.hero .btn-o:hover{background:var(--paper);color:var(--ink)}
+.hero .btn-y{box-shadow:5px 5px 0 rgba(255,196,0,.35);border-color:var(--yellow)}
+.hero-barwrap{position:relative;z-index:5;margin-top:calc(-1 * clamp(58px,6vw,80px))}
+.hero-bar{display:grid;grid-template-columns:1.25fr 1fr 1fr 1.15fr;background:var(--paper);border:2px solid var(--ink);box-shadow:10px 10px 0 var(--yellow),10px 10px 0 2px var(--ink)}
+.hero-bar>div{padding:22px 26px;display:flex;align-items:center;gap:16px;border-left:2px solid var(--ink)}
+.hero-bar>div:first-child{border-left:0}
+.hero-bar img{width:64px;height:64px;object-fit:contain;flex:none}
+.hero-bar b{display:block;font-weight:800;font-size:1.05rem;line-height:1.15}
+.hero-bar small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#55657a;margin-top:3px}
+.hero-bar .big{font-weight:900;font-size:2.6rem;letter-spacing:-.04em;line-height:1}
+.hero-bar a.ph{font-weight:900;font-size:1.45rem;letter-spacing:-.02em;line-height:1.1}
+.hero-bar a.ph:hover{text-decoration:underline;text-decoration-thickness:3px}
 
 /* caution tape */
-.tape{margin-top:clamp(70px,8vw,110px);background:var(--yellow);border-block:2px solid var(--ink);position:relative;overflow:hidden}
+.tape{margin-top:clamp(56px,7vw,90px);background:var(--yellow);border-block:2px solid var(--ink);position:relative;overflow:hidden}
 .tape::before,.tape::after{content:"";display:block;height:12px;background:repeating-linear-gradient(-45deg,var(--ink) 0 14px,var(--yellow) 14px 28px)}
 .tape-run{display:flex;width:max-content;animation:run 38s linear infinite;padding:16px 0}
 .tape-run span{font-weight:800;font-size:clamp(1.1rem,2.2vw,1.7rem);text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;padding-right:36px;display:flex;align-items:center;gap:36px}
@@ -207,6 +220,13 @@ footer .cl a.ph{display:block;font-weight:800;font-size:1.5rem;color:var(--paper
 .js .rv.in{opacity:1;transform:none}
 
 @media (max-width:1020px){
+  .hero{min-height:0;padding-top:60px}
+  .hero-yel{display:none}
+  .hero-navy{width:100%;clip-path:none;background:linear-gradient(180deg,rgba(7,24,43,.93),rgba(7,24,43,.8))}
+  .hero-copy{max-width:100%}
+  .hero-bar{grid-template-columns:1fr 1fr}
+  .hero-bar>div:nth-child(3){border-left:0}
+  .hero-bar>div:nth-child(n+3){border-top:2px solid var(--ink)}
   nav.main{position:absolute;left:0;right:0;top:100%;background:var(--ink);border-bottom:4px solid var(--yellow);display:none}
   nav.main.open{display:block}
   nav.main ul{flex-direction:column;gap:0;padding:8px var(--pad) 20px}
@@ -238,6 +258,9 @@ footer .cl a.ph{display:block;font-weight:800;font-size:1.5rem;color:var(--paper
   .pillar{grid-template-columns:48px 1fr}
   .big30{-webkit-text-stroke-width:2px}
   .hero-btns .btn{width:100%;justify-content:space-between}
+  .hero-bar{grid-template-columns:1fr}
+  .hero-bar>div{border-left:0!important;border-top:2px solid var(--ink);padding:16px 20px}
+  .hero-bar>div:first-child{border-top:0}
   .logo img{height:46px}
 }
 @media (prefers-reduced-motion:reduce){
@@ -276,26 +299,28 @@ footer .cl a.ph{display:block;font-weight:800;font-size:1.5rem;color:var(--paper
 
 <main id="main">
 
-<section class="hero" id="home">
-  <div class="wrap">
-    <span class="eyebrow">Servicing Calgary and area</span>
-    <h1 style="margin-top:20px">Award winning commercial cleaning in <em>Calgary.</em></h1>
-    <div class="hero-grid">
+<section id="home">
+  <div class="hero">
+    <div class="hero-bg"><img src="images/calgary-skyline.jpg" alt="Calgary skyline at sunset" fetchpriority="high"></div>
+    <div class="hero-yel"></div><div class="hero-navy"></div>
+    <div class="wrap hero-in">
       <div class="hero-copy">
-        <span class="tagline">Any size, any space.</span>
+        <span class="eyebrow">Servicing Calgary and area</span>
+        <h1>Award winning commercial cleaning in <em>Calgary.</em></h1>
         <p>Over 30 years of janitorial experience for Calgary businesses, with cost effective methods and employees who are well trained and really care about the job they do.</p>
         <div class="hero-btns">
           <a class="btn btn-y" href="#contact">Get a free quote <span class="ar">&rarr;</span></a>
           <a class="btn btn-o" href="tel:+14032770011">Call 403-277-0011</a>
         </div>
       </div>
-      <div class="hero-pic">
-        <div class="frame"><img src="images/calgary-skyline.jpg" alt="Calgary skyline at sunset" fetchpriority="high"></div>
-        <div class="award">
-          <img src="images/consumer-choice-award.png" alt="Consumer Choice Award, Business Excellence">
-          <div><b>Consumer Choice Award</b><span>Business Excellence</span></div>
-        </div>
-      </div>
+    </div>
+  </div>
+  <div class="wrap hero-barwrap">
+    <div class="hero-bar">
+      <div><img src="images/consumer-choice-award.png" alt="Consumer Choice Award, Business Excellence"><span><b>Consumer Choice Award</b><small>Business Excellence</small></span></div>
+      <div><span class="big">30+</span><span><b>Years</b><small>Janitorial experience</small></span></div>
+      <div><span><b>Any size,<br>any space.</b><small>Commercial cleaning</small></span></div>
+      <div><span><small style="margin:0 0 4px">Free quotes</small><a class="ph" href="tel:+14032770011">403-277-0011</a></span></div>
     </div>
   </div>
 
