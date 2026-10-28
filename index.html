@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Britech Janitorial Services | Commercial Cleaning in Calgary</title>
 <meta name="description" content="Award winning commercial cleaning in Calgary. Over 30 years of janitorial experience for offices, condos, restaurants and commercial spaces. Call 403-277-0011 for a free quote.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FFC400'/%3E%3Ctext x='16' y='24' font-size='24' font-weight='900' text-anchor='middle' font-family='Arial' fill='%230D1B2A'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#0D1B2A; --ink-2:#142a40; --paper:#F4F1EA; --paper-2:#EAE5DA; --yellow:#FFC400; --red:#D3362B; --white:#fff;
+  --ink:#07182B; --ink-2:#142a40; --paper:#F4F1EA; --paper-2:#EAE5DA; --yellow:#FFC400; --red:#D3362B; --white:#fff;
   --line:rgba(13,27,42,.16); --line-d:rgba(255,255,255,.18);
   --sans:'Archivo','Arial Narrow',system-ui,sans-serif; --serif:'Instrument Serif',Georgia,serif;
   --pad:clamp(20px,4vw,56px); --max:1320px;
@@ -39,23 +39,21 @@ em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.0
 :focus-visible{outline:3px solid var(--red);outline-offset:3px}
 
 /* top bar + header */
-.topbar{background:var(--ink);color:#cfd8e3;font-size:.82rem}
+.topbar{background:#040f1c;color:#cfd8e3;font-size:.82rem}
 .topbar .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:9px;padding-bottom:9px}
 .topbar a:hover{color:var(--yellow)}
 .topbar b{color:var(--yellow);font-weight:700}
-header.site{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:2px solid var(--ink)}
+header.site{position:sticky;top:0;z-index:100;background:var(--ink);color:var(--paper);border-bottom:4px solid var(--yellow)}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
-.logo{display:flex;align-items:center;gap:12px}
-.logo .mark{width:46px;height:46px;background:var(--yellow);border:2px solid var(--ink);display:grid;place-items:center;font-weight:900;font-size:1.7rem;letter-spacing:-.04em;box-shadow:3px 3px 0 var(--ink)}
-.logo .word{display:flex;flex-direction:column;line-height:1}
-.logo .word b{font-weight:900;font-size:1.45rem;letter-spacing:.04em}
-.logo .word small{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;margin-top:5px}
+.logo{display:block;line-height:0}
+.logo img{height:54px;width:auto}
 nav.main ul{display:flex;gap:34px}
-nav.main a{font-weight:600;font-size:.95rem;position:relative;padding:6px 0}
-nav.main a::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--yellow);box-shadow:0 1px 0 var(--ink);transition:width .25s}
+nav.main a{font-weight:600;font-size:.95rem;position:relative;padding:6px 0;color:var(--paper)}
+nav.main a::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--yellow);transition:width .25s}
 nav.main a:hover::after,nav.main a.on::after{width:100%}
-.head-cta{padding:12px 20px;font-size:.88rem}
-.burger{display:none;width:46px;height:46px;border:2px solid var(--ink);background:var(--yellow);cursor:pointer;position:relative}
+.head-cta{padding:12px 20px;font-size:.88rem;border-color:var(--yellow);box-shadow:4px 4px 0 rgba(255,196,0,.35)}
+.head-cta:hover{box-shadow:6px 6px 0 rgba(255,196,0,.5)}
+.burger{display:none;width:46px;height:46px;border:2px solid var(--yellow);background:var(--yellow);cursor:pointer;position:relative}
 .burger span,.burger span::before,.burger span::after{position:absolute;left:11px;width:20px;height:2px;background:var(--ink);content:"";transition:.2s}
 .burger span{top:20px}.burger span::before{top:-7px;left:0}.burger span::after{top:7px;left:0}
 .burger[aria-expanded=true] span{background:transparent}
@@ -193,9 +191,7 @@ form.quote .btn{width:100%;justify-content:space-between;font-size:1.05rem;paddi
 /* footer */
 footer.site{background:var(--ink);color:#cfd8e3;padding:clamp(54px,7vw,90px) 0 0;border-top:2px solid var(--ink)}
 .foot-top{display:grid;grid-template-columns:5fr 2fr 3fr 3fr;gap:clamp(24px,4vw,56px);padding-bottom:clamp(36px,5vw,64px)}
-footer .logo .word b{color:var(--paper)}
-footer .logo .word small{color:#cfd8e3}
-footer .logo .mark{color:var(--ink);border-color:var(--yellow);box-shadow:3px 3px 0 var(--yellow)}
+footer .logo img{height:64px}
 footer p.fabout{margin:22px 0 24px;max-width:36ch;font-size:.98rem}
 footer h4{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow);margin-bottom:18px;font-weight:700}
 footer li{margin-bottom:10px;font-size:.98rem}
@@ -211,10 +207,10 @@ footer .cl a.ph{display:block;font-weight:800;font-size:1.5rem;color:var(--paper
 .js .rv.in{opacity:1;transform:none}
 
 @media (max-width:1020px){
-  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:2px solid var(--ink);display:none}
+  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--ink);border-bottom:4px solid var(--yellow);display:none}
   nav.main.open{display:block}
   nav.main ul{flex-direction:column;gap:0;padding:8px var(--pad) 20px}
-  nav.main a{display:block;padding:16px 0;border-bottom:1px solid var(--line);font-size:1.1rem}
+  nav.main a{display:block;padding:16px 0;border-bottom:1px solid var(--line-d);font-size:1.1rem}
   .burger{display:block}
   .head-cta{display:none}
   .hero-grid,.about-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
@@ -242,8 +238,7 @@ footer .cl a.ph{display:block;font-weight:800;font-size:1.5rem;color:var(--paper
   .pillar{grid-template-columns:48px 1fr}
   .big30{-webkit-text-stroke-width:2px}
   .hero-btns .btn{width:100%;justify-content:space-between}
-  .logo .word b{font-size:1.2rem}
-  .logo .mark{width:40px;height:40px;font-size:1.45rem}
+  .logo img{height:46px}
 }
 @media (prefers-reduced-motion:reduce){
   .tape-run{animation:none}
@@ -264,10 +259,7 @@ footer .cl a.ph{display:block;font-weight:800;font-size:1.5rem;color:var(--paper
 
 <header class="site">
   <div class="wrap">
-    <a class="logo" href="#home" aria-label="Britech Janitorial Services, home">
-      <span class="mark">B</span>
-      <span class="word"><b>BRITECH</b><small>Janitorial Services</small></span>
-    </a>
+    <a class="logo" href="#home" aria-label="Britech Janitorial Services, home"><img src="images/logo.png" alt="Britech Janitorial Services" width="300" height="61"></a>
     <nav class="main" id="nav" aria-label="Main">
       <ul>
         <li><a href="#home" class="on">Home</a></li>
@@ -445,10 +437,7 @@ footer .cl a.ph{display:block;font-weight:800;font-size:1.5rem;color:var(--paper
   <div class="wrap">
     <div class="foot-top">
       <div>
-        <a class="logo" href="#home" aria-label="Britech Janitorial Services, home">
-          <span class="mark">B</span>
-          <span class="word"><b>BRITECH</b><small>Janitorial Services</small></span>
-        </a>
+        <a class="logo" href="#home" aria-label="Britech Janitorial Services, home"><img src="images/logo.png" alt="Britech Janitorial Services" width="300" height="61"></a>
         <p class="fabout">Commercial cleaning in Calgary for over 30 years. Family owned and operated.</p>
         <a class="btn btn-y" href="#contact">Get a free quote <span class="ar">&rarr;</span></a>
       </div>
